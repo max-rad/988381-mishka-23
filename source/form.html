@@ -2,11 +2,11 @@
 <html class="page" lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Вязание на заказ</title>
+    <title>Вязание на заказ - «Мишка»</title>
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
+      <a class="page-header__logo" href="index.html" aria-label="Переход на главную страницу">
         <img src="img/mishka_logo_mobile.svg" width="86" height="35" alt="Логотип «Мишка»">
       </a>
 
@@ -68,115 +68,117 @@
         </div>
       </header>
 
-      <seciton class="form">
+      <section class="form">
         <div class="form__wrapper">
           <h2 class="visually-hidden">Форма</h2>
           <p class="form__description">
             Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
           </p>
-          <form class="form__form" action="https://echo.htmlacademy.ru" method="get">
-            <fieldset class="form__type">
-              <legend class="form__legend">Тип</legend>
+          <form action="https://echo.htmlacademy.ru" method="get">
+            <div class="form__main-content">
+              <fieldset class="form__type">
+                <legend class="form__legend">Тип</legend>
 
-              <ul class="form__list type-list">
-                <li class="form__item type-list__item">
-                  <input class="form__input form__input--radio" type="radio" name="type" value="accessory" id="filter-accessory" checked>
-                  <label class="form__label" for="filter-accessory">Аксессуар для интерьера</label>
-                </li>
-                <li class="form__item type-list__item">
-                  <input class="form__input form__input--radio" type="radio" name="type" value="toy" id="filter-toy">
-                  <label class="form__label" for="filter-toy">Детская игрушка</label>
-                </li>
-              </ul>
-            </fieldset>
+                <ul class="form__list type-list">
+                  <li class="form__item type-list__item">
+                    <input class="form__input form__input--radio" type="radio" name="type" value="accessory" id="filter-accessory" checked>
+                    <label class="form__label" for="filter-accessory">Аксессуар для интерьера</label>
+                  </li>
+                  <li class="form__item type-list__item">
+                    <input class="form__input form__input--radio" type="radio" name="type" value="toy" id="filter-toy">
+                    <label class="form__label" for="filter-toy">Детская игрушка</label>
+                  </li>
+                </ul>
+              </fieldset>
 
-            <fieldset class="form__color">
-              <legend class="form__legend">Цвет</legend>
+              <fieldset class="form__color">
+                <legend class="form__legend">Цвет</legend>
 
-              <ul class="form__list color-list">
-                <li class="form__item color-list__item">
-                  <input class="form__input form__input--checkbox" type="checkbox" name="white" id="filter-white" checked>
-                  <label class="form__label" for="filter-white">Белый</label>
-                </li>
-                <li class="form__item color-list__item">
-                  <input class="form__input form__input--checkbox" type="checkbox" name="gray" id="filter-gray" checked>
-                  <label class="form__label" for="filter-gray">Серый</label>
-                </li>
-                <li class="form__item color-list__item">
-                  <input class="form__input form__input--checkbox" type="checkbox" name="tiffany" id="filter-tiffany">
-                  <label class="form__label" for="filter-tiffany">«Тиффани»</label>
-                </li>
-                <li class="form__item color-list__item">
-                  <input class="form__input form__input--checkbox" type="checkbox" name="black" id="filter-black">
-                  <label class="form__label" for="filter-black">Черный</label>
-                </li>
-                <li class="form__item color-list__item">
-                  <input class="form__input form__input--checkbox" type="checkbox" name="pink" id="filter-pink">
-                  <label class="form__label" for="filter-pink">Розовый</label>
-                </li>
-                <li class="form__item color-list__item">
-                  <input class="form__input form__input--checkbox" type="checkbox" name="orange" id="filter-orange">
-                  <label class="form__label" for="filter-orange">Оранжевый</label>
-                </li>
-              </ul>
-            </fieldset>
+                <ul class="form__list color-list">
+                  <li class="form__item color-list__item">
+                    <input class="form__input form__input--checkbox" type="checkbox" name="white" id="filter-white" checked>
+                    <label class="form__label" for="filter-white">Белый</label>
+                  </li>
+                  <li class="form__item color-list__item">
+                    <input class="form__input form__input--checkbox" type="checkbox" name="gray" id="filter-gray" checked>
+                    <label class="form__label" for="filter-gray">Серый</label>
+                  </li>
+                  <li class="form__item color-list__item">
+                    <input class="form__input form__input--checkbox" type="checkbox" name="tiffany" id="filter-tiffany">
+                    <label class="form__label" for="filter-tiffany">«Тиффани»</label>
+                  </li>
+                  <li class="form__item color-list__item">
+                    <input class="form__input form__input--checkbox" type="checkbox" name="black" id="filter-black">
+                    <label class="form__label" for="filter-black">Черный</label>
+                  </li>
+                  <li class="form__item color-list__item">
+                    <input class="form__input form__input--checkbox" type="checkbox" name="pink" id="filter-pink">
+                    <label class="form__label" for="filter-pink">Розовый</label>
+                  </li>
+                  <li class="form__item color-list__item">
+                    <input class="form__input form__input--checkbox" type="checkbox" name="orange" id="filter-orange">
+                    <label class="form__label" for="filter-orange">Оранжевый</label>
+                  </li>
+                </ul>
+              </fieldset>
 
-            <fieldset class="form__name">
-              <legend class="form__legend">ФИО</legend>
+              <fieldset class="form__name">
+                <legend class="form__legend">ФИО</legend>
 
-              <ul class="form__list name-list">
-                <li class="form__item name-list__item">
-                  <label class="form__label" for="name-field">Имя:</label>
-                  <input class="form__input form__input--name" type="text" placeholder="Введите ваше имя*" id="name-field" required>
-                </li>
-                <li class="form__item name-list__item">
-                  <label class="form__label" for="surname-field">Фамилия:</label>
-                  <input class="form__input form__input--surname" type="text" placeholder="Укажите фамилию*" id="surname-field" required>
-                </li>
-                <li class="form__item name-list__item">
-                  <label class="form__label" for="patronymic-field">Отчество:</label>
-                  <input class="form__input form__input--patronymic" type="text" placeholder="Отчество, если желаете" id="patronymic-field">
-                </li>
-              </ul>
-            </fieldset>
+                <ul class="form__list name-list">
+                  <li class="form__item name-list__item">
+                    <label class="form__label" for="name-field">Имя:</label>
+                    <input class="form__input form__input--name" type="text" placeholder="Введите ваше имя*" id="name-field" required>
+                  </li>
+                  <li class="form__item name-list__item">
+                    <label class="form__label" for="surname-field">Фамилия:</label>
+                    <input class="form__input form__input--surname" type="text" placeholder="Укажите фамилию*" id="surname-field" required>
+                  </li>
+                  <li class="form__item name-list__item">
+                    <label class="form__label" for="patronymic-field">Отчество:</label>
+                    <input class="form__input form__input--patronymic" type="text" placeholder="Отчество, если желаете" id="patronymic-field">
+                  </li>
+                </ul>
+              </fieldset>
 
-            <div class="form__contacts-wrapper">
-              <fieldset class="form__phone">
-                <legend class="form__legend">Тел</legend>
+              <div class="form__contacts-wrapper">
+                <fieldset class="form__phone">
+                  <legend class="form__legend">Тел</legend>
 
-                <p class="form__phone-item">
-                  <label class="visually-hidden" for="phone-field">Телефон</label>
-                  <input class="form__input form__input--phone" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" id="phone-field" required>
+                  <p class="form__phone-item">
+                    <label class="visually-hidden" for="phone-field">Телефон</label>
+                    <input class="form__input form__input--phone" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" id="phone-field" required>
+                  </p>
+                </fieldset>
+
+                <fieldset class="form__email">
+                  <legend class="form__legend">E-mail</legend>
+                  <p class="form__email-item">
+                    <label class="visually-hidden" for="email-field">Почта</label>
+                    <input class="form__input form__input--email" type="email" placeholder="Ваш Email*" id="email-field" required>
+                  </p>
+                </fieldset>
+              </div>
+
+              <fieldset class="form__additional">
+                <legend class="form__legend">Доп</legend>
+                <p class="form__textarea-item">
+                  <label class="visually-hidden" for="textarea-field">Пожелания к заказу</label>
+                  <textarea class="form__textarea" name="textarea" placeholder="Опишите все ваши пожелания к заказу" id="textarea-field"></textarea>
                 </p>
               </fieldset>
 
-              <fieldset class="form__email">
-                <legend class="form__legend">E-mail</legend>
-                <p class="form__email-item">
-                  <label class="visually-hidden" for="email-field">Почта</label>
-                  <input class="form__input form__input--email" type="email" placeholder="Ваш Email*" id="email-field" required>
-                </p>
-              </fieldset>
+              <small class="footnote">*Поля обязательны для заполнения</small>
+              <button class="button button--ghost-theme button--block form__button" type="submit">Отправить заказ</button>
             </div>
-
-            <fieldset class="form__additional">
-              <legend class="form__legend">Доп</legend>
-              <p class="form__textarea-item">
-                <label class="visually-hidden" for="textarea-field">Пожелания к заказу</label>
-                <textarea class="form__textarea" name="textarea" placeholder="Опишите все ваши пожелания к заказу" id="textarea-field"></textarea>
-              </p>
-            </fieldset>
-
-            <small class="footnote">*Поля обязательны для заполнения</small>
-            <button class="button button--decor button--block form__button" type="submit">Отправить заказ</button>
           </form>
         </div>
-      </seciton>
+      </section>
     </main>
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer__logo" href="index.html">
+        <a class="page-footer__logo" href="index.html" aria-label="Переход на главную страницу">
           <svg class="page-footer__logo-image" width="102" height="35" viewBox="0 0 102 35" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M19.2204 21.5C19.1204 18.8 18.7204 16.2 18.7204 13.5C18.7204 11.3 19.1204 9.09997 18.3204 6.99997C18.3204 6.79997 18.4204 6.49997 18.4204 6.29997C18.6204 5.29997 15.1204 5.79997 14.6204 6.79997C14.3204 7.09997 14.1204 7.39997 14.2204 7.79997C14.2204 7.89997 14.3204 7.99997 14.3204 8.09997C13.6204 11.3 12.7204 14.4 11.7204 17.5C11.3204 18.7 10.8204 19.8 10.4204 21C9.82041 19.9 9.22041 18.8 8.82041 17.6C7.42041 14.2 6.22041 10.7 4.52041 7.39997C4.72041 5.89997 1.32041 5.99997 0.620408 7.39997C-0.179592 9.09997 -0.0795918 10.8 0.220408 12.6C0.520408 14.6 0.620408 16.6 0.620408 18.7C0.620408 22.7 1.02041 26.6 1.02041 30.6C0.620408 31 0.520408 31.5 0.920408 32C1.12041 32.2 1.32041 32.4 1.52041 32.5C2.52041 33.2 5.12041 32.6 5.12041 31.2C5.12041 27.1 4.82041 23 4.72041 18.8C4.72041 18.4 4.72041 18 4.72041 17.6C4.82041 17.7 4.82041 17.9 4.92041 18C5.52041 19.6 6.22041 21.2 7.12041 22.7C8.02041 24.2 8.42041 25.8 8.92041 27.4C8.72041 27.6 8.62041 27.9 8.72041 28.1C8.72041 28.3 8.82041 28.4 9.02041 28.5C9.62041 29 10.8204 28.8 11.5204 28.5C11.8204 28.4 12.1204 28.2 12.3204 28.1C12.6204 27.9 13.2204 27.4 13.0204 26.9C13.0204 26.8 12.9204 26.7 12.9204 26.6C13.4204 25.3 13.6204 24 13.9204 22.7C14.2204 21.3 14.7204 19.9 15.2204 18.6C15.3204 19.2 15.3204 19.8 15.4204 20.5C15.6204 23.1 15.4204 25.6 15.4204 28.1C15.4204 28.9 15.5204 29.7 15.6204 30.6C15.7204 30.9 16.0204 32.4 15.9204 32.5C15.1204 33 15.3204 33.6 16.1204 33.8C17.0204 34 18.2204 33.7 18.9204 33.1C20.1204 32 19.5204 30.3 19.3204 28.9C18.8204 26.5 19.3204 23.9 19.2204 21.5Z" fill="black"/>
             <path d="M27.6204 22.2001C27.5204 20.2001 26.8204 18.3001 26.8204 16.3001C26.8204 14.0001 27.0204 11.7001 26.6204 9.40009C26.5204 8.70009 22.5204 9.50009 22.7204 10.4001C23.0204 12.5001 22.9204 14.6001 22.9204 16.8001C22.9204 18.8001 23.4204 20.7001 23.6204 22.7001C23.9204 24.8001 23.5204 26.9001 23.7204 28.9001C23.8204 29.9001 24.5204 31.6001 23.8204 32.5001C23.4204 33.0001 25.3204 32.8001 25.4204 32.8001C26.2204 32.7001 27.2204 32.4001 27.7204 31.8001C28.4204 31.0001 27.9204 29.4001 27.8204 28.4001C27.5204 26.4001 27.7204 24.2001 27.6204 22.2001Z" fill="black"/>
@@ -219,7 +221,7 @@
 
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на страницу HTML Academy">
             <svg class="copyright__htmlacademy-logo" width="28" height="35" viewBox="0 0 28 35" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M13.9687 0.0444336H13.8687L0.368652 1.44443V26.1444L13.8687 34.1444L27.2687 26.1444V1.44443L13.9687 0.0444336ZM25.3687 12.1444L13.8687 5.34443V5.24443H13.7687L13.6687 5.14443V5.24443L2.26865 12.1444V3.14443L13.7687 1.94443L25.3687 3.14443V12.1444ZM13.7687 6.84443L25.2687 13.5444L20.7687 16.1444L13.6687 11.9444V13.3444L19.5687 16.8444L18.6687 17.3444L13.6687 14.3444V15.7444L17.4687 18.0444L16.6687 18.5444L13.6687 16.7444V18.1444L15.5687 19.2444L13.7687 20.3444L2.36865 13.6444L13.7687 6.84443ZM2.26865 15.1444L13.6687 21.9444V22.9444L5.76865 18.2444V19.6444L13.7687 24.4444V25.5444L5.76865 20.8444V22.2444L13.7687 27.0444L21.8687 22.1444V16.9444L25.2687 14.9444V24.9444L13.7687 31.8444L2.26865 25.0444V15.1444Z" fill="#63D1BB"/>
             </svg>
