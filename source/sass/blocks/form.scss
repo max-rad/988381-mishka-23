@@ -1,10 +1,10 @@
-.form {
+/*.form {
 
-}
+}*/
 
-.form__wrapper {
+/*.form__wrapper {
 
-}
+}*/
 
 .form__description {
   @include reset-p;
@@ -13,9 +13,9 @@
   color: $basic-gray;
 }
 
-.form__main-content {
+/*.form__main-content {
 
-}
+}*/
 
 .form__type {
   @include reset-fieldset;
@@ -33,9 +33,9 @@
   @include reset-list;
 }
 
-.form__item {
+/*.form__item {
 
-}
+}*/
 
 .form__input {
   font-size: 17px;
@@ -57,33 +57,33 @@
   @include reset-fieldset;
 }
 
-.form__contacts-wrapper {
+/*.form__contacts-wrapper {
 
-}
+}*/
 
 .form__phone {
   @include reset-fieldset;
 }
 
-.form__phone-item {
+/*.form__phone-item {
 
-}
+}*/
 
 .form__email {
   @include reset-fieldset;
 }
 
-.form__email-item {
+/*.form__email-item {
 
-}
+}*/
 
 .form__additional {
   @include reset-fieldset;
 }
 
-.form__textarea-item {
+/*.form__textarea-item {
 
-}
+}*/
 
 .form__textarea {
   font-size: 17px;
@@ -97,6 +97,6 @@
   color: $basic-gray;
 }
 
-.form__button {
+/*.form__button {
 
-}
+}*/
