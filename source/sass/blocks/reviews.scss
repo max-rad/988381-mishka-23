@@ -1,0 +1,53 @@
+.reviews {
+}
+
+.reviews__wrapper {
+
+}
+
+.reviews__title {
+  @include reset-h;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.reviews__list {
+  @include reset-list;
+}
+
+.reviews__item {
+  @include reset-blockquote;
+}
+
+.reviews__text {
+  @include reset-p;
+  font-size: 15px;
+  line-height: 30px;
+  color: $basic-gray;
+}
+
+.reviews__author {
+  @include reset-p;
+}
+
+.reviews__author-name {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.reviews__author-nickname {
+  display: block;
+  font-size: 17px;
+  line-height: 30px;
+  color: $basic-gray;
+}
+
+.reviews__controls {
+
+}
+
+.reviews__button {
+
+}

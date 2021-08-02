@@ -1,0 +1,23 @@
+.about {
+}
+
+.about__wrapper {
+
+}
+
+.about__title {
+  @include reset-h;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.about__list {
+  @include reset-list;
+}
+
+.about__item {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+}

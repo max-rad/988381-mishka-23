@@ -1,0 +1,51 @@
+.promo__wrapper {
+
+}
+
+.promo__title {
+  @include reset-h;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.promo__description {
+  @include reset-p;
+  font-size: 15px;
+  line-height: 24px;
+  color: $basic-gray;
+}
+
+.promo__list {
+  @include reset-list;
+}
+
+.promo__item {
+  font-size: 15px;
+  line-height: 20px;
+  color: $basic-gray;
+}
+
+.promo__parameter {
+
+}
+
+.promo__value {
+  margin: 0;
+}
+
+.promo__image-wrapper {
+
+}
+
+.promo__price {
+  @include reset-p;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: $basic-gray;
+}
+
+.promo__button {
+
+}

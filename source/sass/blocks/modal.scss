@@ -1,0 +1,51 @@
+.modal {
+
+}
+
+.modal__title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.modal__form {
+
+}
+
+.modal__size {
+  @include reset-fieldset;
+}
+
+.modal__legend {
+  font-size: 15px;
+  line-height: 30px;
+  color: $basic-gray;
+}
+
+.modal__list {
+  @include reset-list;
+}
+
+.modal__item {
+
+}
+
+.modal__label {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $basic-gray;
+  background-color: $basic-white;
+}
+
+.modal__button {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  border: none;
+  color: $basic-white;
+  background-color: $special-downy;
+}

@@ -1,0 +1,102 @@
+.form {
+
+}
+
+.form__wrapper {
+
+}
+
+.form__description {
+  @include reset-p;
+  font-size: 13px;
+  line-height: 24px;
+  color: $basic-gray;
+}
+
+.form__main-content {
+
+}
+
+.form__type {
+  @include reset-fieldset;
+}
+
+.form__legend {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $special-downy;
+}
+
+.form__list {
+  @include reset-list;
+}
+
+.form__item {
+
+}
+
+.form__input {
+  font-size: 17px;
+  line-height: 18px;
+  color: $basic-black;
+}
+
+.form__label {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.form__color {
+  @include reset-fieldset;
+}
+
+.form__name {
+  @include reset-fieldset;
+}
+
+.form__contacts-wrapper {
+
+}
+
+.form__phone {
+  @include reset-fieldset;
+}
+
+.form__phone-item {
+
+}
+
+.form__email {
+  @include reset-fieldset;
+}
+
+.form__email-item {
+
+}
+
+.form__additional {
+  @include reset-fieldset;
+}
+
+.form__textarea-item {
+
+}
+
+.form__textarea {
+  font-size: 17px;
+  line-height: 18px;
+  color: $basic-black;
+}
+
+.form__footnote {
+  font-size: 14px;
+  line-height: 16px;
+  color: $basic-gray;
+}
+
+.form__button {
+
+}

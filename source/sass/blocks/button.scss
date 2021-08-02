@@ -1,0 +1,16 @@
+.button {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  &--ghost-theme {
+    border: 2px solid $basic-gray;
+    color: $basic-gray;
+    background-color: $basic-white;
+  }
+
+  &--block {
+    display: block;
+  }
+}
