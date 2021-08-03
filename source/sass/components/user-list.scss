@@ -1,0 +1,25 @@
+.user-list {
+  @include reset-list;
+}
+
+.user-list__item {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.user-list__input-search {
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  border: none;
+
+  &::placeholder {
+    color: $basic-black;
+  }
+}
+
+.user-list__link {
+  display: block;
+  color: $basic-black;
+}

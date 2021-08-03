@@ -1,0 +1,37 @@
+/*.product {
+
+}*/
+
+.product__title {
+  @include reset-h;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.product__image-wrapper {
+  width: 260px;
+  height: 195px;
+}
+
+/*.product__details-wrapper {
+
+}*/
+
+.product__description {
+  @include reset-p;
+  font-size: 13px;
+  line-height: 30px;
+  color: $basic-gray;
+}
+
+.product__price {
+  @include reset-p;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+/*.product__button {
+
+}*/

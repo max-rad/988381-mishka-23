@@ -1,0 +1,14 @@
+.site-list {
+  @include reset-list;
+}
+
+.site-list__item {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.site-list__link {
+  display: block;
+  color: $basic-black;
+}

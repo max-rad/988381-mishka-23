@@ -1,1 +1,55 @@
-// Начните писать стили здесь
+/* ========== NORMALIZE ========== */
+
+@import "node_modules/normalize.scss/normalize.scss";
+
+/* ========== GLOBAL ========== */
+
+@import "global/fonts.scss";
+@import "utils/variables.scss";
+@import "global/global.scss";
+@import "utils/mixin.scss";
+
+/* ========== BLOCKS ========== */
+
+/* ===== HEADER ===== */
+
+@import "layout/page.scss";
+@import "layout/page-header.scss";
+@import "components/navigation.scss";
+@import "components/site-list.scss";
+@import "components/site-list-additional.scss";
+@import "components/user-list.scss";
+
+/* ===== MAIN ===== */
+
+@import "layout/page-main.scss";
+@import "components/content.scss";
+@import "components/promo.scss";
+@import "components/about.scss";
+@import "components/reviews.scss";
+@import "components/contacts.scss";
+@import "components/button.scss";
+
+/* ===== FOOTER ===== */
+
+@import "layout/page-footer.scss";
+@import "components/social.scss";
+@import "components/copyright.scss";
+
+/* ===== MODAL ===== */
+
+@import "components/modal.scss";
+
+/* ========== FORM ========== */
+
+@import "components/main-header.scss";
+@import "components/form.scss";
+@import "components/type-list.scss";
+@import "components/color-list.scss";
+@import "components/name-list.scss";
+
+/* ========== CATALOG ========== */
+
+@import "components/catalog.scss";
+@import "components/product.scss";
+@import "components/production.scss";

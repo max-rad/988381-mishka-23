@@ -1,0 +1,14 @@
+.site-list-additional {
+  @include reset-list;
+}
+
+.site-list-additional__item {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.site-list-additional__link {
+  display: block;
+  color: $basic-black;
+}
