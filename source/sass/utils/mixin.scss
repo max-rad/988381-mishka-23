@@ -4,15 +4,7 @@
   list-style: none;
 }
 
-@mixin reset-h {
-  margin: 0;
-}
-
-@mixin reset-p {
-  margin: 0;
-}
-
-@mixin reset-blockquote {
+@mixin reset-text {
   margin: 0;
 }
 
