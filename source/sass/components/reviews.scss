@@ -2,12 +2,12 @@
 
 }*/
 
-/*.reviews__wrapper {
-
-}*/
+.reviews__wrapper {
+  position: relative;
+}
 
 .reviews__title {
-  @include reset-h;
+  @include reset-text;
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
@@ -18,18 +18,18 @@
 }
 
 .reviews__item {
-  @include reset-blockquote;
+  @include reset-text;
 }
 
 .reviews__text {
-  @include reset-p;
+  @include reset-text;
   font-size: 15px;
   line-height: 30px;
   color: $basic-gray;
 }
 
 .reviews__author {
-  @include reset-p;
+  @include reset-text;
 }
 
 .reviews__author-name {

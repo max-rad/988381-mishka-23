@@ -7,7 +7,7 @@
 }*/
 
 .about__title {
-  @include reset-h;
+  @include reset-text;
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
@@ -15,6 +15,11 @@
 
 .about__list {
   @include reset-list;
+
+  @media (min-width: $tablet-width), (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .about__item {

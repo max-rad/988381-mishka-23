@@ -7,7 +7,7 @@
 }*/
 
 .production__title {
-  @include reset-h;
+  @include reset-text;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
@@ -23,7 +23,7 @@
 }*/
 
 .production__description {
-  @include reset-p;
+  @include reset-text;
   font-size: 13px;
   line-height: 24px;
 }

@@ -1,5 +1,12 @@
 .site-list-additional {
   @include reset-list;
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    // TODO: change to position: absolute
+    order: 1;
+    display: block;
+  }
 }
 
 .site-list-additional__item {

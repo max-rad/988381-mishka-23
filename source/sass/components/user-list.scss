@@ -1,5 +1,9 @@
 .user-list {
   @include reset-list;
+
+  @media (min-width: $tablet-width) {
+
+  }
 }
 
 .user-list__item {
@@ -16,6 +20,10 @@
 
   &::placeholder {
     color: $basic-black;
+  }
+
+  @media (min-width: $tablet-width), (min-width: $desktop-width) {
+    display: none;
   }
 }
 

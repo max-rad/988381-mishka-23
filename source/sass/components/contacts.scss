@@ -2,16 +2,25 @@
 
 }*/
 
-/*.contacts__wrapper {
-
-}*/
+.contacts__wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-areas:
+      "contacts-title   contacts-map"
+      "contacts-list    contacts-map"
+      "contacts-button  contacts-map";
+    grid-template-columns: 1fr 1fr;
+  }
+}
 
 .contacts__title {
-  @include reset-h;
+  @include reset-text;
+  grid-area: contacts-title;
 }
 
 .contacts__list {
   @include reset-list;
+  grid-area: contacts-list;
 }
 
 .contacts__item {
@@ -28,10 +37,10 @@
   margin: 0;
 }
 
-/*.contacts__map {
+.contacts__map {
+  grid-area: contacts-map;
+}
 
-}*/
-
-/*.contacts__button {
-
-}*/
+.contacts__button {
+  grid-area: contacts-button;
+}

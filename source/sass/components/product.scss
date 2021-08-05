@@ -3,7 +3,7 @@
 }*/
 
 .product__title {
-  @include reset-h;
+  @include reset-text;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
@@ -19,14 +19,14 @@
 }*/
 
 .product__description {
-  @include reset-p;
+  @include reset-text;
   font-size: 13px;
   line-height: 30px;
   color: $basic-gray;
 }
 
 .product__price {
-  @include reset-p;
+  @include reset-text;
   font-weight: 700;
   font-size: 15px;
   line-height: 24px;

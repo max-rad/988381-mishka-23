@@ -3,7 +3,9 @@
 }
 
 .page-header__wrapper {
-  /*margin: 0 auto;*/
+  position: relative;
+  display: flex;
+  justify-content: space-between;
 }
 
 .page-header__logo {
@@ -13,8 +15,13 @@
 }
 
 .page-header__info {
-  @include reset-p;
+  @include reset-text;
+  display: none;
   font-size: 15px;
   line-height: 24px;
   color: $basic-gray;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }

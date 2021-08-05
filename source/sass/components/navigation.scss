@@ -1,10 +1,20 @@
-/*.navigation {
+.navigation {
 
-}*/
+}
 
-/*.navigation__toggle {
+.navigation__toggle {
+  @media (min-width: $tablet-width), (min-width: $desktop-width) {
+    display: none;
+  }
+}
 
-}*/
+.navigation__wrapper {
+  @media (min-width: $tablet-width), (min-width: $desktop-width) {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+}
 
 /*.navigation__list {
 

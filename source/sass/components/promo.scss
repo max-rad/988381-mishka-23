@@ -1,16 +1,56 @@
-/*.promo__wrapper {
+/*.promo {
 
 }*/
 
+.promo__wrapper {
+
+}
+
+.promo__title-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
 .promo__title {
-  @include reset-h;
+  @include reset-text;
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
+
+  @media (min-width: $desktop-width) {
+    // TODO: change to position: absolute
+    order: 1;
+  }
+}
+
+.promo__weekly {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $special-downy;
+}
+
+.promo__content-wrapper {
+  @media (min-width: $tablet-width), (min-width: $desktop-width) {
+    display: grid;
+    grid-template-areas:
+      "promo-description  promo-image"
+      "promo-list         promo-image"
+      "promo-price        promo-image"
+      "promo-button       promo-image";
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .promo__description {
-  @include reset-p;
+  @include reset-text;
+  grid-area: promo-description;
   font-size: 15px;
   line-height: 24px;
   color: $basic-gray;
@@ -18,6 +58,7 @@
 
 .promo__list {
   @include reset-list;
+  grid-area: promo-list;
 }
 
 .promo__item {
@@ -34,18 +75,19 @@
   margin: 0;
 }
 
-/*.promo__image-wrapper {
-
-}*/
+.promo__image-wrapper {
+  grid-area: promo-image;
+}
 
 .promo__price {
-  @include reset-p;
+  @include reset-text;
+  grid-area: promo-price;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
   color: $basic-gray;
 }
 
-/*.promo__button {
-
-}*/
+.promo__button {
+  grid-area: promo-button;
+}

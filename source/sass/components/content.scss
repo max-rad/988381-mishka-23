@@ -14,7 +14,7 @@
 }
 
 .content__title {
-  @include reset-h;
+  @include reset-text;
   font-weight: 700;
   font-size: 27px;
   line-height: 30px;
@@ -22,6 +22,11 @@
 
 .content__list {
   @include reset-list;
+
+  @media (min-width: $tablet-width), (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .content__item {
