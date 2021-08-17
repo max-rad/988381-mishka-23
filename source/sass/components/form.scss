@@ -2,101 +2,333 @@
 
 }*/
 
-/*.form__wrapper {
+.form__wrapper {
+  padding: 17px 30px 55px;
 
-}*/
+  @media (min-width: $tablet-width) {
+    padding: 54px 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 99px 0 50px;
+  }
+}
 
 .form__description {
   @include reset-text;
+  max-width: 1150px;
+  margin: 0 auto 29px;
+  padding: 0 30px;
   font-size: 13px;
   line-height: 24px;
   color: $basic-gray;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    padding: 0 50px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 225px;
+  }
 }
 
+/* TODO: delete */
 /*.form__main-content {
 
 }*/
 
-.form__type {
-  @include reset-fieldset;
+.form__content-wrapper {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 25.29% 1fr;
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 137px 0 111px;
+    grid-template-columns: 12.63% 1fr;
+  }
+}
+
+.form__legend-wrapper {
+  position: relative;
+  display: flex;
+
+  &::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    margin-top: -0.5px;
+    background-color: $special-downy;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 17px;
+
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .form__legend {
+  @include reset-text;
+  padding-right: 23px;
   font-weight: 700;
   font-size: 17px;
   line-height: 16px;
   text-transform: uppercase;
   color: $special-downy;
+  background-color: $basic-white;
+  white-space: nowrap;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+  }
 }
 
 .form__list {
   @include reset-list;
 }
 
-/*.form__item {
-
-}*/
-
 .form__input {
+  width: 100%;
   font-size: 17px;
   line-height: 18px;
-  color: $basic-black;
+  border: none;
+  box-shadow: inset 0 -2px 0 $basic-black;
+  color: $basic-gray;
+  background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    line-height: 18px;
+  }
+
+  &:hover {
+    box-shadow: inset 0 -2px 0 $special-downy;
+  }
+
+  &:focus {
+    box-shadow: inset 0 -2px 0 $special-downy;
+  }
 }
 
 .form__label {
+  display: block;
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 52px;
+    padding: 17px 0;
+    font-size: 19px;
+  }
+}
+
+.form__type {
+  @include reset-fieldset;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 63px;
+    padding-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 62px;
+    padding-bottom: 48px;
+  }
 }
 
 .form__color {
   @include reset-fieldset;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: $basic-light-gray;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 48px;
+    padding-bottom: 52px;
+  }
 }
 
 .form__name {
   @include reset-fieldset;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 
-/*.form__contacts-wrapper {
-
-}*/
+.form__contacts-wrapper {
+  @media (min-width: $tablet-width) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: $basic-light-gray;
+  }
+}
 
 .form__phone {
   @include reset-fieldset;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+  }
 }
 
-/*.form__phone-item {
+.form__phone-item {
+  @include reset-text;
+  padding-top: 4px;
+  padding-bottom: 35px;
 
-}*/
+  .form__input {
+    padding: 14px 0 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+
+    .form__input {
+      padding: 10px 17px 16px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 87px;
+  }
+}
 
 .form__email {
   @include reset-fieldset;
 }
 
-/*.form__email-item {
+.form__email-item {
+  @include reset-text;
+  padding-top: 4px;
+  padding-bottom: 35px;
 
-}*/
+  .form__input {
+    padding: 14px 0 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+
+    .form__input {
+      padding: 10px 17px 16px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 87px;
+  }
+}
 
 .form__additional {
   @include reset-fieldset;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 50px;
+    padding-bottom: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 49px;
+  }
 }
 
-/*.form__textarea-item {
+.form__textarea-item {
+  @include reset-text;
+  padding-top: 21px;
+  padding-bottom: 17px;
 
-}*/
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 87px;
+  }
+}
 
 .form__textarea {
+  width: 100%;
+  height: 142px;
+  padding: 16px;
   font-size: 17px;
   line-height: 18px;
+  vertical-align: middle;
+  border: 2px solid $basic-gray;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+  }
+
+  &:hover {
+    border: 2px solid $special-downy;
+  }
+
+  &:focus {
+    border: 2px solid $special-downy;
+  }
+}
+
+.form__button-wrapper {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 225px;
+  }
 }
 
 .form__footnote {
+  order: 1;
+  display: block;
+  margin-bottom: 30px;
   font-size: 14px;
   line-height: 16px;
   color: $basic-gray;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    font-size: 17px;
+  }
 }
 
-/*.form__button {
+.form__button {
+  width: 100%;
+  font-size: 17px;
+  line-height: 16px;
+  padding: 16px 37px;
 
-}*/
+  @media (min-width: $tablet-width) {
+    width: auto;
+    padding: 16px 30px;
+  }
+}

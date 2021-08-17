@@ -1,17 +1,31 @@
-/*.copyright {
-
-}*/
+.copyright {
+  display: flex;
+  align-items: center;
+}
 
 .copyright__text {
+  margin-right: 26px;
   font-weight: 700;
   font-size: 19px;
   line-height: 18px;
 }
 
 .copyright__link {
-  /*display: block;*/
   width: 28px;
   height: 35px;
+
+  &:hover {
+    .copyright__htmlacademy-logo-path {
+      opacity: 1;
+      fill: $special-moderate-puerto-rico;
+    }
+  }
+
+  &:focus {
+    .copyright__htmlacademy-logo-path {
+      opacity: 0.3;
+    }
+  }
 }
 
 /*.copyright__htmlacademy-logo {

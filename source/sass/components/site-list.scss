@@ -1,13 +1,14 @@
 .site-list {
-  @include reset-list;
-
   @media (min-width: $tablet-width) {
-    // TODO: change to position: absolute
-    order: 1;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    left: 50px;
+    bottom: -45px;
   }
 
   @media (min-width: $desktop-width) {
-    order: 0;
+    position: static;
   }
 }
 
@@ -15,9 +16,62 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
+  box-shadow:
+    0 1px 0 $basic-very-light-gray,
+    inset 0 1px 0 $basic-very-light-gray;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 37px;
+    font-size: 15px;
+    box-shadow: none;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+    font-size: 17px;
+
+    &--catalog {
+      padding: 33px 35px 32px 0;
+      box-shadow: 1px 0 0 $special-black-with-point-one-opacity;
+    }
+
+    &--form {
+      padding: 33px 35px 32px 36px;
+    }
+  }
 }
 
 .site-list__link {
   display: block;
   color: $basic-black;
+
+  &--catalog {
+    padding: 29px 0 26px 76px;
+  }
+
+  &--form {
+    padding: 29px 0 26px 76px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--catalog {
+      padding: 0;
+    }
+
+    &--form {
+      padding: 0;
+    }
+  }
 }
