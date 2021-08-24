@@ -1,7 +1,38 @@
-/*.name-list {
+.name-list {
+  padding-top: 29px;
+  padding-bottom: 34px;
 
-}*/
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 
-/*.name-list__item {
+  @media (min-width: $desktop-width) {
+    padding-right: 87px;
+  }
+}
 
-}*/
+.name-list__item {
+  margin-bottom: 22px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+}
+
+.name-list__label {
+  margin-right: 24px;
+}
+
+.name-list__input {
+  padding: 17px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 13px 18px;
+  }
+}

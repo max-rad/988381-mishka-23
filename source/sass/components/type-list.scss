@@ -1,7 +1,86 @@
-/*.type-list {
+.type-list {
+  padding-top: 30px;
+  padding-bottom: 31px;
 
-}*/
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
 
-/*.type-list__item {
+.type-list__item {
+  margin-bottom: 11px;
 
-}*/
+  .form__label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 42px;
+    padding-left: 61px;
+    cursor: pointer;
+    user-select: none;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 78px;
+    }
+  }
+
+  .form__label::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 42px;
+    height: 42px;
+    margin-top: -21px;
+    border: 2px solid $basic-gray;
+    border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      top: 21px;
+      width: 52px;
+      height: 52px;
+    }
+  }
+
+  input:checked + .form__label::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 21px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: $special-downy;
+    transform: translate(-50%, -50%);
+
+    @media (min-width: $tablet-width) {
+      left: 26px;
+      width: 23px;
+      height: 23px;
+    }
+  }
+
+  input:not(:disabled):hover + .form__label::before {
+    border: 2px solid $special-downy;
+  }
+
+  input:not(:disabled):focus + .form__label::before {
+    border: 2px solid $special-downy;
+  }
+
+  input:disabled + .form__label {
+    cursor: default;
+  }
+
+  input:disabled + .form__label::before {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

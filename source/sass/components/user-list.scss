@@ -1,25 +1,133 @@
 .user-list {
-  @include reset-list;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .user-list__item {
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-}
+  box-shadow:
+    0 1px 0 $basic-very-light-gray,
+    inset 0 1px 0 $basic-very-light-gray;
 
-.user-list__input-search {
-  font-weight: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  border: none;
+  &--search {
+    display: flex;
+    padding: 28px 0 27px 32px;
+  }
 
-  &::placeholder {
-    color: $basic-black;
+  @media (min-width: $tablet-width) {
+    box-shadow: none;
+
+    &--search {
+      padding: 36px 31px 35px 33px;
+      box-shadow:
+        inset 1px 0 0 $special-black-with-point-one-opacity,
+        1px 0 0 $special-black-with-point-one-opacity;
+    }
+
+    &--cart {
+      padding: 33px 0 32px 31px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--search {
+      padding: 36px 32px 35px 32px;
+    }
+
+    &--cart {
+      padding: 33px 2px 32px 31px;
+    }
   }
 }
 
 .user-list__link {
-  display: block;
   color: $basic-black;
+
+  &--search {
+    display: flex;
+    align-items: center;
+  }
+
+  &--search:hover {
+    .user-list__icon-search {
+      opacity: 1;
+      fill: $special-downy;
+    }
+  }
+
+  &--search:focus {
+    .user-list__icon-search:focus {
+      opacity: 0.6;
+    }
+  }
+
+  &--cart {
+    display: flex;
+    align-items: center;
+    padding: 29px 0 26px 30px;
+  }
+
+  &--cart:hover {
+    span {
+      opacity: 0.6;
+    }
+
+    .user-list__icon-cart {
+      opacity: 1;
+      fill: $special-downy;
+    }
+  }
+
+  &--cart:focus {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.user-list__icon-search {
+  margin-right: 26px;
+  fill: $basic-black;
+  opacity: 0.2;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+  }
+}
+
+.user-list__form-search {
+  display: flex;
+}
+
+.user-list__input-search {
+  padding: 0;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  border: none;
+  background-color: transparent;
+
+  &::placeholder {
+    color: $basic-black;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.user-list__icon-cart {
+  margin-right: 25px;
+  fill: $basic-black;
+  opacity: 0.2;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 31px;
+  }
 }

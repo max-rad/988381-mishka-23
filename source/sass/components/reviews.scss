@@ -1,42 +1,132 @@
-/*.reviews {
+.reviews {
+  position: relative;
+  max-width: 1150px;
+  margin: 0 auto 38px;
 
-}*/
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background-image: url("../img/separators/zigzag_line_mobile.svg");
+    background-repeat: repeat-x;
+    background-position: 50% 0;
+  }
 
-/*.reviews__wrapper {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 46px;
 
-}*/
+    &::after {
+      height: 17px;
+      background-image: url("../img/separators/zigzag_line_tablet.svg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 71px;
+    padding: 0 50px;
+
+    &::after {
+      left: 0;
+      height: 23px;
+      background-image: url("../img/separators/zigzag_line_desktop.svg");
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.reviews__wrapper {
+  position: relative;
+  padding: 0 30px 51px;
+
+  @media (min-width: $tablet-width) {
+    padding: 83px 50px 132px;
+    background-image: url("../img/reviews/review_background.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/reviews/review_background@2x.jpg");
+      background-size: 350px auto;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 78px 0 185px 174px;
+  }
+}
 
 .reviews__title {
-  @include reset-h;
+  @include reset-text;
+  margin-bottom: 14px;
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 39px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 36px;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .reviews__list {
   @include reset-list;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .reviews__item {
-  @include reset-blockquote;
+  @include reset-text;
 }
 
 .reviews__text {
-  @include reset-p;
+  @include reset-text;
+  margin-bottom: 33px;
   font-size: 15px;
   line-height: 30px;
   color: $basic-gray;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 61px;
+    font-size: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 44px;
+  }
 }
 
 .reviews__author {
-  @include reset-p;
+  @include reset-text;
 }
 
 .reviews__author-name {
+  display: block;
+  margin-bottom: 3px;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 17px;
+  }
 }
 
 .reviews__author-nickname {
@@ -46,10 +136,79 @@
   color: $basic-gray;
 }
 
-/*.reviews__controls {
+.reviews__controls {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 38px;
+  border: 1px solid $basic-very-light-gray;
 
-}*/
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1px;
+    height: 50px;
+    background-color: $basic-very-light-gray;
+  }
 
-/*.reviews__button {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    column-gap: 37px;
+    right: 69px;
+    bottom: 147px;
+    margin-bottom: 0;
+    border: none;
 
-}*/
+    &::before {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 19px;
+    bottom: 202px;
+  }
+}
+
+.reviews__control {
+  min-width: 130px;
+  height: 50px;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+
+  &--previous {
+    background-image: url("../img/reviews/huge_arrow_left.svg");
+    background-repeat: no-repeat;
+    background-position: 48% 44%;
+  }
+
+  &--next {
+    background-image: url("../img/reviews/huge_arrow_right.svg");
+    background-repeat: no-repeat;
+    background-position: 48% 44%;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-width: 50px;
+    height: 26px;
+  }
+}
+
+.reviews__button {
+  padding: 14px 66px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 79px;
+    right: 51px;
+    /*min-width: 175px;*/
+    padding: 14px 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 0;
+  }
+}

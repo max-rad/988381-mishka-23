@@ -1,12 +1,13 @@
 /* ========== NORMALIZE ========== */
 
-@import "node_modules/normalize.scss/normalize.scss";
+@import "./node_modules/normalize.scss/normalize.scss";
 
 /* ========== GLOBAL ========== */
 
 @import "global/fonts.scss";
 @import "utils/variables.scss";
 @import "global/global.scss";
+@import "global/grid.scss";
 @import "utils/mixin.scss";
 
 /* ========== BLOCKS ========== */
@@ -27,6 +28,7 @@
 @import "components/promo.scss";
 @import "components/about.scss";
 @import "components/reviews.scss";
+@import "components/slider.scss";
 @import "components/contacts.scss";
 @import "components/button.scss";
 

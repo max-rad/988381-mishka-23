@@ -4,27 +4,59 @@
 
 .social__list {
   @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
-/*.social__item {
+.social__item {
+  margin-right: 41px;
 
-}*/
+  &:last-child {
+    margin-right: 0;
+  }
+}
 
 .social__link {
   display: block;
 
-  /*&--instagram {
-    width: 22px;
-    height: 22px;
+  &:hover {
+    .social__icon-instagram {
+      fill: $special-moderate-puerto-rico;
+    }
+
+    .social__icon-facebook {
+      fill: $special-moderate-puerto-rico;
+    }
+
+    .social__icon-twitter {
+      fill: $special-moderate-puerto-rico;
+    }
   }
 
-  &--facebook {
-    width: 15px;
-    height: 28px;
-  }
+  &:focus {
+    .social__icon-instagram {
+      opacity: 0.3;
+    }
 
-  &--twitter {
-    width: 23px;
-    height: 20px;
-  }*/
+    .social__icon-facebook {
+      opacity: 0.3;
+    }
+
+    .social__icon-twitter {
+      opacity: 0.3;
+    }
+  }
+}
+
+.social__icon-instagram {
+  fill: $basic-black;
+}
+
+.social__icon-facebook {
+  fill: $basic-black;
+}
+
+.social__icon-twitter {
+  fill: $basic-black;
 }

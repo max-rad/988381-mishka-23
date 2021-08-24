@@ -2,6 +2,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
+  text-align: center;
   text-transform: uppercase;
 
   &--ghost-theme {
@@ -12,5 +13,18 @@
 
   &--block {
     display: block;
+  }
+
+  &:hover {
+    color: $basic-white;
+    background-color: $basic-gray;
+  }
+
+  &:focus {
+    color: $special-white-with-point-three-opacity;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
   }
 }
