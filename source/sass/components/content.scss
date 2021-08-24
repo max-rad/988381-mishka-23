@@ -13,7 +13,6 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 41px;
-    padding: 0 50px 12px;
     background-image: url("../img/content/content_background_tablet.jpg");
     background-position: 50% 0;
 
@@ -26,7 +25,7 @@
       height: 24px;
       background-image: url("../img/separators/zigzag_fill_tablet.svg");
       background-repeat: repeat-x;
-      background-position: 0 0;
+      background-position: 50% 0;
     }
 
     @media (min-resolution: 2dppx) {
@@ -37,7 +36,6 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 54px;
-    padding: 0 50px 17px;
     background-image: url("../img/content/content_background_desktop.jpg");
 
     &::after {
@@ -55,6 +53,14 @@
 .content__wrapper {
   max-width: 1150px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 50px 17px;
+  }
 }
 
 .content__title-wrapper {

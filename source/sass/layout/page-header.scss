@@ -10,14 +10,33 @@
 .page-header__wrapper {
   position: relative;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   max-width: 1150px;
   margin: 0 auto;
-  padding: 22px 30px;
+  /*padding: 0 30px;*/
 
   @media (min-width: $tablet-width) {
     display: block;
     padding: 0 50px;
+  }
+}
+
+.page-header__logo-wrapper {
+  padding: 22px 0;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 50%;
+    left: 105px;
+    padding: 0;
+    transform: translate(-50%, -50%);
+    /*margin-top: -23px;*/
+    cursor: pointer;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 50%;
   }
 }
 
@@ -35,17 +54,11 @@
   }
 
   @media (min-width: $tablet-width) {
-    position: absolute;
-    top: 50%;
-    left: 105px;
     width: 113px;
     height: 46px;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
   }
 
   @media (min-width: $desktop-width) {
-    left: 50%;
     width: 149px;
     height: 72px;
   }

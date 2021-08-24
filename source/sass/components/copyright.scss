@@ -15,19 +15,18 @@
   height: 35px;
 
   &:hover {
-    .copyright__htmlacademy-logo-path {
-      opacity: 1;
+    .copyright__htmlacademy-logo {
       fill: $special-moderate-puerto-rico;
     }
   }
 
   &:focus {
-    .copyright__htmlacademy-logo-path {
+    .copyright__htmlacademy-logo {
       opacity: 0.3;
     }
   }
 }
 
-/*.copyright__htmlacademy-logo {
-
-}*/
+.copyright__htmlacademy-logo {
+  fill: $special-downy;
+}

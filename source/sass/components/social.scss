@@ -21,15 +21,42 @@
   display: block;
 
   &:hover {
-    .social__icon-path {
-      opacity: 1;
+    .social__icon-instagram {
+      fill: $special-moderate-puerto-rico;
+    }
+
+    .social__icon-facebook {
+      fill: $special-moderate-puerto-rico;
+    }
+
+    .social__icon-twitter {
       fill: $special-moderate-puerto-rico;
     }
   }
 
   &:focus {
-    .social__icon-path {
+    .social__icon-instagram {
+      opacity: 0.3;
+    }
+
+    .social__icon-facebook {
+      opacity: 0.3;
+    }
+
+    .social__icon-twitter {
       opacity: 0.3;
     }
   }
+}
+
+.social__icon-instagram {
+  fill: $basic-black;
+}
+
+.social__icon-facebook {
+  fill: $basic-black;
+}
+
+.social__icon-twitter {
+  fill: $basic-black;
 }

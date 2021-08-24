@@ -44,23 +44,22 @@
     height: 35px;
 
     &:hover {
-      .page-footer__logo-path {
-        opacity: 1;
+      .page-footer__logo-image {
         fill: $special-moderate-puerto-rico;
       }
     }
 
     &:focus {
-      .page-footer__logo-path {
+      .page-footer__logo-image {
         opacity: 0.3;
       }
     }
   }
 }
 
-/*.page-footer__logo-image {
-
-}*/
+.page-footer__logo-image {
+  fill: $basic-black;
+}
 
 .page-footer__social {
   margin-bottom: 44px;

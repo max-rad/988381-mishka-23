@@ -12,7 +12,7 @@
       height: 24px;
       background-image: url("../img/separators/zigzag_fill_tablet.svg");
       background-repeat: repeat-x;
-      background-position: 0 0;
+      background-position: 50% 0;
     }
   }
 
@@ -20,6 +20,7 @@
     &::after {
       height: 34px;
       background-image: url("../img/separators/zigzag_fill_desktop_form.svg");
+      background-position: 50% 0;
     }
   }
 }

@@ -36,6 +36,19 @@
   }
 }
 
+.product__title-link {
+  display: block;
+  color: $basic-black;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
+}
+
 .product__title {
   @include reset-text;
   grid-area: product-title;
@@ -62,6 +75,10 @@
     width: 316px;
     height: 462px;
   }
+}
+
+.product__image-link {
+  display: block;
 }
 
 .product__image {

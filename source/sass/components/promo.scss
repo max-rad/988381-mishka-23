@@ -11,7 +11,7 @@
     height: 6px;
     background-image: url("../img/separators/zigzag_line_mobile.svg");
     background-repeat: repeat-x;
-    background-position: 0 0;
+    background-position: 50% 0;
   }
 
   @media (min-width: $tablet-width) {
@@ -29,6 +29,7 @@
     &::after {
       height: 23px;
       background-image: url("../img/separators/zigzag_line_desktop.svg");
+      background-repeat: no-repeat;
     }
   }
 }
@@ -122,6 +123,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    align-items: start;
     column-gap: 58px;
     padding-left: 175px;
   }

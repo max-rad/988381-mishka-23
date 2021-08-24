@@ -71,15 +71,18 @@
   }
 
   /* TODO: uncomment when add js */
-  /*.navigation--nojs {
+  .navigation--nojs {
+    width: 100%;
+
     .navigation__wrapper {
       display: block;
+      position: static;
     }
 
     .navigation__toggle {
       display: none;
     }
-  }*/
+  }
 }
 
 .navigation__wrapper {
