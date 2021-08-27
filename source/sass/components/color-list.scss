@@ -62,8 +62,12 @@
     border: 2px solid $special-downy;
   }
 
+  input:not(:disabled):active + .form__label::before {
+    border: 2px solid $special-black-with-point-one-opacity;
+  }
+
   input:not(:disabled):focus + .form__label::before {
-    border: 2px solid $special-downy;
+    border: 2px solid $special-black-with-point-one-opacity;
   }
 
   input:disabled + .form__label {
