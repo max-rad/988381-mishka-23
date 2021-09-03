@@ -1,7 +1,7 @@
 const slider = document.querySelector(".slider");
 const sliderList = slider.querySelector(".slider__list");
-const sliderControls = slider.querySelector(".slider__controls");
 const sliderSlides = sliderList.querySelectorAll(".slider__item");
+const sliderControls = slider.querySelector(".slider__controls");
 const sliderPrevious = sliderControls.querySelector(".slider__control--previous");
 const sliderNext = sliderControls.querySelector(".slider__control--next");
 

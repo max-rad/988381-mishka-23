@@ -17,8 +17,8 @@ navToggle.addEventListener("click", function (evt) {
 
 const slider = document.querySelector(".slider");
 const sliderList = slider.querySelector(".slider__list");
-const sliderControls = slider.querySelector(".slider__controls");
 const sliderSlides = sliderList.querySelectorAll(".slider__item");
+const sliderControls = slider.querySelector(".slider__controls");
 const sliderPrevious = sliderControls.querySelector(".slider__control--previous");
 const sliderNext = sliderControls.querySelector(".slider__control--next");
 
@@ -92,8 +92,6 @@ function initMap() {
 const mainPage = document.querySelector(".page__body");
 const modalLink = document.querySelector(".promo__button");
 const modalPopup = document.querySelector(".modal");
-const modalForm = modalPopup.querySelector(".modal__form");
-
 
 modalLink.addEventListener("click", function (evt) {
   evt.preventDefault();
