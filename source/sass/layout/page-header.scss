@@ -14,7 +14,6 @@
   align-items: center;
   max-width: 1150px;
   margin: 0 auto;
-  /*padding: 0 30px;*/
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -31,7 +30,6 @@
     left: 105px;
     padding: 0;
     transform: translate(-50%, -50%);
-    /*margin-top: -23px;*/
     cursor: pointer;
   }
 
