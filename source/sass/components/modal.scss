@@ -69,15 +69,15 @@
     border: 2px solid $special-medium-aquamarine;
   }
 
-  input:not(:disabled):hover + .modal__label {
+  input:not(:checked):hover + .modal__label {
     border: 2px solid $special-black-with-point-three-opacity;
   }
 
-  input:not(:disabled):active + .modal__label {
+  input:active + .modal__label {
     border: 2px solid $special-medium-aquamarine;
   }
 
-  input:not(:disabled):focus + .modal__label {
+  input:focus + .modal__label {
     border: 2px solid $special-medium-aquamarine;
   }
 }
