@@ -10,7 +10,7 @@
     <link rel="apple-touch-icon" href="img/favicon/180.png">
     <link rel="manifest" href="manifest.webmanifest">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -284,7 +284,7 @@
       </div>
     </footer>
 
-    <!--<section class="modal">
+    <section class="modal">
       <h2 class="modal__title">Добавить в корзину</h2>
 
       <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
@@ -292,7 +292,7 @@
           <legend class="modal__legend">Выберите размер:</legend>
           <ul class="modal__list">
             <li class="modal__item">
-              <input class="visually-hidden" type="radio" name="size" value="small" id="filter-small">
+              <input class="visually-hidden" type="radio" name="size" value="small" id="filter-small" checked>
               <label class="modal__label" for="filter-small">S</label>
             </li>
             <li class="modal__item">
@@ -305,13 +305,12 @@
             </li>
           </ul>
         </fieldset>
-
-        <button class="modal__button" type="submit">Добавить</button>
+        <div class="modal__button-wrapper">
+          <button class="modal__button" type="submit">Добавить</button>
+        </div>
       </form>
-    </section>-->
+    </section>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDqnh4Q9rIaFY6Se7ZtGNmt3DXLaHdePo&callback=initMap&libraries=&v=weekly" async></script>
-    <script src="js/menu.js"></script>
-    <script src="js/slider.js"></script>
-    <script src="js/map.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

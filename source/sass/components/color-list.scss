@@ -48,10 +48,10 @@
   }
 
   input:checked + .form__label::before {
-    background-image: url("../img/icons/icon_tick.svg");
+    background-image: url("../img/form/icon_tick.svg");
 
     @media (min-width: $tablet-width) {
-      background-image: url("../img/icons/icon_tick_tablet.svg");
+      background-image: url("../img/form/icon_tick_tablet.svg");
     }
 
     background-repeat: no-repeat;
