@@ -126,6 +126,9 @@
   }
 
   &--icon-interior:hover {
+    bottom: 5px;
+    min-height: 124px;
+    margin-bottom: -5px;
     background-color: $special-moderate-downy;
   }
 
@@ -143,6 +146,7 @@
   }
 
   &--icon-interior:hover::after {
+    top: 18px;
     opacity: 0.7;
   }
 
@@ -155,6 +159,9 @@
   }
 
   &--icon-toy:hover {
+    bottom: 5px;
+    min-height: 124px;
+    margin-bottom: -5px;
     background-color: $special-moderate-puerto-rico;
   }
 
@@ -172,6 +179,7 @@
   }
 
   &--icon-toy:hover::after {
+    top: 16px;
     opacity: 0.7;
   }
 
@@ -188,9 +196,18 @@
       right: 36px;
     }
 
+    &--icon-interior:hover::after {
+      top: 25px;
+      opacity: 0.7;
+    }
+
     &--icon-toy::after {
       top: 31px;
       right: 33px;
+    }
+
+    &--icon-toy:hover::after {
+      top: 26px;
     }
   }
 
@@ -203,9 +220,17 @@
       right: 36px;
     }
 
+    &--icon-interior:hover::after {
+      top: 25px;
+    }
+
     &--icon-toy::after {
       top: 31px;
       right: 35px;
+    }
+
+    &--icon-toy:hover::after {
+      top: 26px;
     }
   }
 }

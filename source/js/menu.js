@@ -1,7 +1,7 @@
 const navMain = document.querySelector(".navigation");
 const navToggle = navMain.querySelector(".navigation__toggle");
 
-navMain.classList.remove("navigation-nojs");
+navMain.classList.remove("navigation--nojs");
 
 navToggle.addEventListener("click", function (evt) {
   evt.preventDefault();

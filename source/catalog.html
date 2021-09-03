@@ -10,7 +10,14 @@
     <link rel="apple-touch-icon" href="img/favicon/180.png">
     <link rel="manifest" href="manifest.webmanifest">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" as="script" href="js/script.min.js">
+    <link rel="preload" as="style" href="css/style.min.css">
+    <link rel="preload" as="font" href="fonts/opensans.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="fonts/opensans.woff" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" as="font" href="fonts/opensansbold.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="fonts/opensansbold.woff" type="font/woff" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -25,7 +32,7 @@
           </a>
         </div>
 
-        <nav class="navigation navigation--closed">
+        <nav class="navigation navigation--closed navigation--nojs">
           <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
 
           <div class="navigation__wrapper">
@@ -85,88 +92,98 @@
       <section class="catalog">
         <h2 class="visually-hidden">Каталог</h2>
 
-        <div class="catalog__wrapper">
-          <ul class="catalog__list">
-            <li class="catalog__item">
-              <article class="product">
-                <div class="product__image-wrapper">
-                  <a class="product__image-link" href="#">
-                    <picture>
-                      <source media="(min-width: 1150px)" srcset="img/cards/bunny_hop_desktop.jpg 1x, img/cards/bunny_hop_desktop@2x.jpg 2x">
-                      <source media="(min-width: 768px)" srcset="img/cards/bunny_hop_tablet.jpg 1x, img/cards/bunny_hop_tablet@2x.jpg 2x">
-                      <img class="product__image" src="img/cards/bunny_hop_mobile.jpg" srcset="img/cards/bunny_hop_mobile@2x.jpg 2x" width="260" height="195" alt="Вязанный заяц в синей одежде с муляжом мороженного на заднем фоне">
-                    </picture>
-                  </a>
-                </div>
-                <div class="product__details-wrapper">
-                  <a class="product__title-link" href="#">
-                    <h3 class="product__title">Зайчик-попрыгайчик</h3>
-                  </a>
-                  <p class="product__description">Рост 30 см, вес 200 г</p>
-                  <p class="product__price">1 200 руб.</p>
-                  <button class="product__button" type="button">
-                    <svg class="product__button-image" width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path class="product__button-path" opacity="0.2" d="M20.1884 6.85716H16.6377L13.1884 0.380944C12.9855 -8.61287e-06 12.5797 -0.0952351 12.1739 0.0952412C11.7681 0.285717 11.6667 0.66667 11.8696 1.04762L15.0145 6.85716H5.7826L8.92753 1.04762C9.13043 0.66667 8.92754 0.285717 8.6232 0.0952412C8.2174 -0.0952351 7.8116 0.0952295 7.6087 0.380944L4.1594 6.85716H0.811583C0.405785 6.85716 0 7.14286 0 7.61905C0 8 0.304336 8.38094 0.811583 8.38094H1.01449L1.92753 11.2381C1.72463 11.3333 1.62317 11.5238 1.62317 11.8095C1.62317 12.1905 1.92753 12.4762 2.33332 12.4762L4.05797 18H16.942L18.6667 12.4762C19.0725 12.4762 19.3768 12.1905 19.3768 11.8095C19.3768 11.619 19.2754 11.3333 19.0725 11.2381L19.9855 8.38094H20.1884C20.5942 8.38094 21 8.09524 21 7.61905C21 7.14286 20.5942 6.85716 20.1884 6.85716ZM15.6232 16.4762H5.07247L3.85506 12.381H16.942L15.6232 16.4762ZM17.2464 10.9524H3.34782L2.53623 8.28573H18.058L17.2464 10.9524Z" fill="black"/>
-                    </svg>
-                    <span class="visually-hidden">Добавить в корзину</span>
-                  </button>
-                </div>
-              </article>
-            </li>
-            <li class="catalog__item">
-              <article class="product">
-                <div class="product__image-wrapper">
-                  <a class="product__image-link" href="#">
-                    <picture>
-                      <source media="(min-width: 1150px)" srcset="img/cards/laundry_basket_desktop.jpg 1x, img/cards/laundry_basket_desktop@2x.jpg 2x">
-                      <source media="(min-width: 768px)" srcset="img/cards/laundry_basket_tablet.jpg 1x, img/cards/laundry_basket_tablet@2x.jpg 2x">
-                      <img class="product__image" src="img/cards/laundry_basket_mobile.jpg" srcset="img/cards/laundry_basket_mobile@2x.jpg 2x" width="260" height="195" alt="Вязанная корзинка бело-персикового цвета с тремя полотенцами внутри">
-                    </picture>
-                  </a>
-                </div>
-                <div class="product__details-wrapper">
-                  <a class="product__title-link" href="#">
-                    <h3 class="product__title">Корзинка для белья</h3>
-                  </a>
-                  <p class="product__description">Диаметр 15 см, высота 10 см</p>
-                  <p class="product__price">690 руб.</p>
-                  <button class="product__button" type="button">
-                    <svg class="product__button-image" width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path class="product__button-path" opacity="0.2" d="M20.1884 6.85716H16.6377L13.1884 0.380944C12.9855 -8.61287e-06 12.5797 -0.0952351 12.1739 0.0952412C11.7681 0.285717 11.6667 0.66667 11.8696 1.04762L15.0145 6.85716H5.7826L8.92753 1.04762C9.13043 0.66667 8.92754 0.285717 8.6232 0.0952412C8.2174 -0.0952351 7.8116 0.0952295 7.6087 0.380944L4.1594 6.85716H0.811583C0.405785 6.85716 0 7.14286 0 7.61905C0 8 0.304336 8.38094 0.811583 8.38094H1.01449L1.92753 11.2381C1.72463 11.3333 1.62317 11.5238 1.62317 11.8095C1.62317 12.1905 1.92753 12.4762 2.33332 12.4762L4.05797 18H16.942L18.6667 12.4762C19.0725 12.4762 19.3768 12.1905 19.3768 11.8095C19.3768 11.619 19.2754 11.3333 19.0725 11.2381L19.9855 8.38094H20.1884C20.5942 8.38094 21 8.09524 21 7.61905C21 7.14286 20.5942 6.85716 20.1884 6.85716ZM15.6232 16.4762H5.07247L3.85506 12.381H16.942L15.6232 16.4762ZM17.2464 10.9524H3.34782L2.53623 8.28573H18.058L17.2464 10.9524Z" fill="black"/>
-                    </svg>
-                    <span class="visually-hidden">Добавить в корзину</span>
-                  </button>
-                </div>
-              </article>
-            </li>
-            <li class="catalog__item">
-              <article class="product">
-                <div class="product__image-wrapper">
-                  <a class="product__image-link" href="#">
-                    <picture>
-                      <source media="(min-width: 1150px)" srcset="img/cards/large_basket_for_toys_desktop.jpg 1x, img/cards/large_basket_for_toys_desktop@2x.jpg 2x">
-                      <source media="(min-width: 768px)" srcset="img/cards/large_basket_for_toys_tablet.jpg 1x, img/cards/large_basket_for_toys_tablet@2x.jpg 2x">
-                      <img class="product__image" src="img/cards/large_basket_for_toys_mobile.jpg" srcset="img/cards/large_basket_for_toys_mobile@2x.jpg 2x" width="260" height="195" alt="Вязанная корзинка бело-зеленого цвета наполненная мягкими игрушками">
-                    </picture>
-                  </a>
-                </div>
-                <div class="product__details-wrapper">
-                  <a class="product__title-link" href="#">
-                    <h3 class="product__title">Большая корзинка для игрушек</h3>
-                  </a>
-                  <p class="product__description">Диаметр 30 см, высота 30 см</p>
-                  <p class="product__price">1 500 руб.</p>
-                  <button class="product__button" type="button">
-                    <svg class="product__button-image" width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path class="product__button-path" opacity="0.2" d="M20.1884 6.85716H16.6377L13.1884 0.380944C12.9855 -8.61287e-06 12.5797 -0.0952351 12.1739 0.0952412C11.7681 0.285717 11.6667 0.66667 11.8696 1.04762L15.0145 6.85716H5.7826L8.92753 1.04762C9.13043 0.66667 8.92754 0.285717 8.6232 0.0952412C8.2174 -0.0952351 7.8116 0.0952295 7.6087 0.380944L4.1594 6.85716H0.811583C0.405785 6.85716 0 7.14286 0 7.61905C0 8 0.304336 8.38094 0.811583 8.38094H1.01449L1.92753 11.2381C1.72463 11.3333 1.62317 11.5238 1.62317 11.8095C1.62317 12.1905 1.92753 12.4762 2.33332 12.4762L4.05797 18H16.942L18.6667 12.4762C19.0725 12.4762 19.3768 12.1905 19.3768 11.8095C19.3768 11.619 19.2754 11.3333 19.0725 11.2381L19.9855 8.38094H20.1884C20.5942 8.38094 21 8.09524 21 7.61905C21 7.14286 20.5942 6.85716 20.1884 6.85716ZM15.6232 16.4762H5.07247L3.85506 12.381H16.942L15.6232 16.4762ZM17.2464 10.9524H3.34782L2.53623 8.28573H18.058L17.2464 10.9524Z" fill="black"/>
-                    </svg>
-                    <span class="visually-hidden">Добавить в корзину</span>
-                  </button>
-                </div>
-              </article>
-            </li>
-          </ul>
-        </div>
+        <ul class="catalog__list">
+          <li class="catalog__item">
+            <article class="product">
+              <div class="product__image-wrapper">
+                <a class="product__image-link" href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1150px)" srcset="img/cards/bunny_hop_desktop.webp 1x, img/cards/bunny_hop_desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/bunny_hop_tablet.webp 1x, img/cards/bunny_hop_tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/cards/bunny_hop_mobile.webp 1x, img/cards/bunny_hop_mobile@2x.webp 2x">
+
+                    <source media="(min-width: 1150px)" srcset="img/cards/bunny_hop_desktop.jpg 1x, img/cards/bunny_hop_desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/cards/bunny_hop_tablet.jpg 1x, img/cards/bunny_hop_tablet@2x.jpg 2x">
+                    <img class="product__image" src="img/cards/bunny_hop_mobile.jpg" srcset="img/cards/bunny_hop_mobile@2x.jpg 2x" width="260" height="195" alt="Вязанный заяц в синей одежде с муляжом мороженного на заднем фоне">
+                  </picture>
+                </a>
+              </div>
+              <div class="product__details-wrapper">
+                <a class="product__title-link" href="#">
+                  <h3 class="product__title">Зайчик-попрыгайчик</h3>
+                </a>
+                <p class="product__description">Рост 30 см, вес 200 г</p>
+                <p class="product__price">1 200 руб.</p>
+                <button class="product__button" type="button">
+                  <svg class="product__button-image" width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="product__button-path" opacity="0.2" d="M20.1884 6.85716H16.6377L13.1884 0.380944C12.9855 -8.61287e-06 12.5797 -0.0952351 12.1739 0.0952412C11.7681 0.285717 11.6667 0.66667 11.8696 1.04762L15.0145 6.85716H5.7826L8.92753 1.04762C9.13043 0.66667 8.92754 0.285717 8.6232 0.0952412C8.2174 -0.0952351 7.8116 0.0952295 7.6087 0.380944L4.1594 6.85716H0.811583C0.405785 6.85716 0 7.14286 0 7.61905C0 8 0.304336 8.38094 0.811583 8.38094H1.01449L1.92753 11.2381C1.72463 11.3333 1.62317 11.5238 1.62317 11.8095C1.62317 12.1905 1.92753 12.4762 2.33332 12.4762L4.05797 18H16.942L18.6667 12.4762C19.0725 12.4762 19.3768 12.1905 19.3768 11.8095C19.3768 11.619 19.2754 11.3333 19.0725 11.2381L19.9855 8.38094H20.1884C20.5942 8.38094 21 8.09524 21 7.61905C21 7.14286 20.5942 6.85716 20.1884 6.85716ZM15.6232 16.4762H5.07247L3.85506 12.381H16.942L15.6232 16.4762ZM17.2464 10.9524H3.34782L2.53623 8.28573H18.058L17.2464 10.9524Z" fill="black"/>
+                  </svg>
+                  <span class="visually-hidden">Добавить в корзину</span>
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="catalog__item">
+            <article class="product">
+              <div class="product__image-wrapper">
+                <a class="product__image-link" href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1150px)" srcset="img/cards/laundry_basket_desktop.webp 1x, img/cards/laundry_basket_desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/laundry_basket_tablet.webp 1x, img/cards/laundry_basket_tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/cards/laundry_basket_mobile.webp 1x, img/cards/laundry_basket_mobile@2x.webp 2x">
+
+                    <source media="(min-width: 1150px)" srcset="img/cards/laundry_basket_desktop.jpg 1x, img/cards/laundry_basket_desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/cards/laundry_basket_tablet.jpg 1x, img/cards/laundry_basket_tablet@2x.jpg 2x">
+                    <img class="product__image" src="img/cards/laundry_basket_mobile.jpg" srcset="img/cards/laundry_basket_mobile@2x.jpg 2x" width="260" height="195" alt="Вязанная корзинка бело-персикового цвета с тремя полотенцами внутри">
+                  </picture>
+                </a>
+              </div>
+              <div class="product__details-wrapper">
+                <a class="product__title-link" href="#">
+                  <h3 class="product__title">Корзинка для белья</h3>
+                </a>
+                <p class="product__description">Диаметр 15 см, высота 10 см</p>
+                <p class="product__price">690 руб.</p>
+                <button class="product__button" type="button">
+                  <svg class="product__button-image" width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="product__button-path" opacity="0.2" d="M20.1884 6.85716H16.6377L13.1884 0.380944C12.9855 -8.61287e-06 12.5797 -0.0952351 12.1739 0.0952412C11.7681 0.285717 11.6667 0.66667 11.8696 1.04762L15.0145 6.85716H5.7826L8.92753 1.04762C9.13043 0.66667 8.92754 0.285717 8.6232 0.0952412C8.2174 -0.0952351 7.8116 0.0952295 7.6087 0.380944L4.1594 6.85716H0.811583C0.405785 6.85716 0 7.14286 0 7.61905C0 8 0.304336 8.38094 0.811583 8.38094H1.01449L1.92753 11.2381C1.72463 11.3333 1.62317 11.5238 1.62317 11.8095C1.62317 12.1905 1.92753 12.4762 2.33332 12.4762L4.05797 18H16.942L18.6667 12.4762C19.0725 12.4762 19.3768 12.1905 19.3768 11.8095C19.3768 11.619 19.2754 11.3333 19.0725 11.2381L19.9855 8.38094H20.1884C20.5942 8.38094 21 8.09524 21 7.61905C21 7.14286 20.5942 6.85716 20.1884 6.85716ZM15.6232 16.4762H5.07247L3.85506 12.381H16.942L15.6232 16.4762ZM17.2464 10.9524H3.34782L2.53623 8.28573H18.058L17.2464 10.9524Z" fill="black"/>
+                  </svg>
+                  <span class="visually-hidden">Добавить в корзину</span>
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="catalog__item">
+            <article class="product">
+              <div class="product__image-wrapper">
+                <a class="product__image-link" href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1150px)" srcset="img/cards/large_basket_for_toys_desktop.webp 1x, img/cards/large_basket_for_toys_desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/cards/large_basket_for_toys_tablet.webp 1x, img/cards/large_basket_for_toys_tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/cards/large_basket_for_toys_mobile.webp 1x, img/cards/large_basket_for_toys_mobile@2x.webp 2x">
+
+                    <source media="(min-width: 1150px)" srcset="img/cards/large_basket_for_toys_desktop.jpg 1x, img/cards/large_basket_for_toys_desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/cards/large_basket_for_toys_tablet.jpg 1x, img/cards/large_basket_for_toys_tablet@2x.jpg 2x">
+                    <img class="product__image" src="img/cards/large_basket_for_toys_mobile.jpg" srcset="img/cards/large_basket_for_toys_mobile@2x.jpg 2x" width="260" height="195" alt="Вязанная корзинка бело-зеленого цвета наполненная мягкими игрушками">
+                  </picture>
+                </a>
+              </div>
+              <div class="product__details-wrapper">
+                <a class="product__title-link" href="#">
+                  <h3 class="product__title">Большая корзинка для игрушек</h3>
+                </a>
+                <p class="product__description">Диаметр 30 см, высота 30 см</p>
+                <p class="product__price">1 500 руб.</p>
+                <button class="product__button" type="button">
+                  <svg class="product__button-image" width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="product__button-path" opacity="0.2" d="M20.1884 6.85716H16.6377L13.1884 0.380944C12.9855 -8.61287e-06 12.5797 -0.0952351 12.1739 0.0952412C11.7681 0.285717 11.6667 0.66667 11.8696 1.04762L15.0145 6.85716H5.7826L8.92753 1.04762C9.13043 0.66667 8.92754 0.285717 8.6232 0.0952412C8.2174 -0.0952351 7.8116 0.0952295 7.6087 0.380944L4.1594 6.85716H0.811583C0.405785 6.85716 0 7.14286 0 7.61905C0 8 0.304336 8.38094 0.811583 8.38094H1.01449L1.92753 11.2381C1.72463 11.3333 1.62317 11.5238 1.62317 11.8095C1.62317 12.1905 1.92753 12.4762 2.33332 12.4762L4.05797 18H16.942L18.6667 12.4762C19.0725 12.4762 19.3768 12.1905 19.3768 11.8095C19.3768 11.619 19.2754 11.3333 19.0725 11.2381L19.9855 8.38094H20.1884C20.5942 8.38094 21 8.09524 21 7.61905C21 7.14286 20.5942 6.85716 20.1884 6.85716ZM15.6232 16.4762H5.07247L3.85506 12.381H16.942L15.6232 16.4762ZM17.2464 10.9524H3.34782L2.53623 8.28573H18.058L17.2464 10.9524Z" fill="black"/>
+                  </svg>
+                  <span class="visually-hidden">Добавить в корзину</span>
+                </button>
+              </div>
+            </article>
+          </li>
+        </ul>
       </section>
 
       <section class="production">
@@ -176,6 +193,10 @@
           </div>
           <div class="production__image-wrapper">
             <picture>
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/production/video_desktop.webp 1x, img/production/video_desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/production/video_tablet.webp 1x, img/production/video_tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/production/video_mobile.webp 1x, img/production/video_mobile@2x.webp 2x">
+
               <source media="(min-width: 1150px)" srcset="img/production/video_desktop.jpg 1x, img/production/video_desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/production/video_tablet.jpg 1x, img/production/video_tablet@2x.jpg 2x">
               <img class="production__image" src="img/production/video_mobile.jpg" srcset="img/production/video_mobile@2x.jpg 2x" width="260" height="150" alt="Вязанная корзинка цвета «Тиффани» с серым">
@@ -200,7 +221,7 @@
           </svg>
         </a>
 
-        <div class="page-footer__social social">
+        <div class="social">
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link" href="https://www.instagram.com/htmlacademy">
@@ -229,7 +250,7 @@
           </ul>
         </div>
 
-        <div class="page-footer__copyright copyright">
+        <div class="copyright">
           <span class="copyright__text">Разработано</span>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на страницу HTML Academy">
             <svg class="copyright__htmlacademy-logo" width="28" height="35">
@@ -240,10 +261,10 @@
       </div>
     </footer>
 
-    <!--<section class="modal">
+    <section class="modal">
       <h2 class="modal__title">Добавить в корзину</h2>
 
-      <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+      <form action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="modal__size">
           <legend class="modal__legend">Выберите размер:</legend>
           <ul class="modal__list">
@@ -262,8 +283,11 @@
           </ul>
         </fieldset>
 
-        <button class="modal__button" type="submit">Добавить</button>
+        <div class="modal__button-wrapper">
+          <button class="modal__button" type="submit">Добавить</button>
+        </div>
       </form>
-    </section>-->
+    </section>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

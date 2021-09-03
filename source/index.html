@@ -10,7 +10,17 @@
     <link rel="apple-touch-icon" href="img/favicon/180.png">
     <link rel="manifest" href="manifest.webmanifest">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" as="script" href="js/script.min.js">
+    <link rel="preload" as="style" href="css/style.min.css">
+    <link rel="preload" as="image" href="img/content/content_background_mobile@2x.jpg">
+    <link rel="preload" as="image" href="img/content/content_background_tablet@2x.jpg">
+    <link rel="preload" as="image" href="img/content/content_background_desktop@2x.jpg">
+    <link rel="preload" as="font" href="fonts/opensans.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="fonts/opensans.woff" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" as="font" href="fonts/opensansbold.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="fonts/opensansbold.woff" type="font/woff" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -25,7 +35,7 @@
           </a>
         </div>
 
-        <nav class="navigation navigation--closed">
+        <nav class="navigation navigation--closed navigation--nojs">
           <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
 
           <div class="navigation__wrapper">
@@ -75,7 +85,7 @@
       </div>
     </header>
 
-    <main class="page-main">
+    <main>
       <section class="content">
         <div class="content__wrapper">
           <div class="content__title-wrapper">
@@ -124,6 +134,10 @@
 
             <div class="promo__image-wrapper">
               <picture>
+                <source type="image/webp" media="(min-width: 1150px)" srcset="img/promo/triple_set_desktop.webp 1x, img/promo/triple_set_desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/promo/triple_set_tablet.webp 1x, img/promo/triple_set_tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/promo/triple_set_mobile.webp 1x, img/promo/triple_set_mobile@2x.webp 2x">
+
                 <source media="(min-width: 1150px)" srcset="img/promo/triple_set_desktop.jpg 1x, img/promo/triple_set_desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/promo/triple_set_tablet.jpg 1x, img/promo/triple_set_tablet@2x.jpg 2x">
                 <img class="promo__image" src="img/promo/triple_set_mobile.jpg" srcset="img/promo/triple_set_mobile@2x.jpg 2x" width="260" height="315" alt="Три вязанные корзинки сложенные друг на друга">
@@ -223,6 +237,10 @@
 
           <div class="contacts__map-wrapper contacts__map-wrapper--nojs">
             <picture>
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/contacts/map_desktop.webp 1x, img/contacts/map_desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/contacts/map_tablet.webp 1x, img/contacts/map_tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/contacts/map_mobile.webp 1x, img/contacts/map_mobile@2x.webp 2x">
+
               <source media="(min-width: 1150px)" srcset="img/contacts/map_desktop.png 1x, img/contacts/map_desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/contacts/map_tablet.png 1x, img/contacts/map_tablet@2x.png 2x">
               <img class="contacts__map" src="img/contacts/map_mobile.png" srcset="img/contacts/map_mobile@2x.png 2x" width="320" height="455" alt="Магазин по адресу: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
@@ -244,7 +262,7 @@
           </svg>
         </a>
 
-        <div class="page-footer__social social">
+        <div class="social">
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link" href="https://www.instagram.com/htmlacademy">
@@ -273,7 +291,7 @@
           </ul>
         </div>
 
-        <div class="page-footer__copyright copyright">
+        <div class="copyright">
           <span class="copyright__text">Разработано</span>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <svg class="copyright__htmlacademy-logo" width="28" height="35">
@@ -284,15 +302,15 @@
       </div>
     </footer>
 
-    <!--<section class="modal">
+    <section class="modal">
       <h2 class="modal__title">Добавить в корзину</h2>
 
-      <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+      <form action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="modal__size">
           <legend class="modal__legend">Выберите размер:</legend>
           <ul class="modal__list">
             <li class="modal__item">
-              <input class="visually-hidden" type="radio" name="size" value="small" id="filter-small">
+              <input class="visually-hidden" type="radio" name="size" value="small" id="filter-small" checked>
               <label class="modal__label" for="filter-small">S</label>
             </li>
             <li class="modal__item">
@@ -305,13 +323,12 @@
             </li>
           </ul>
         </fieldset>
-
-        <button class="modal__button" type="submit">Добавить</button>
+        <div class="modal__button-wrapper">
+          <button class="modal__button" type="submit">Добавить</button>
+        </div>
       </form>
-    </section>-->
+    </section>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDqnh4Q9rIaFY6Se7ZtGNmt3DXLaHdePo&callback=initMap&libraries=&v=weekly" async></script>
-    <script src="js/menu.js"></script>
-    <script src="js/slider.js"></script>
-    <script src="js/map.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

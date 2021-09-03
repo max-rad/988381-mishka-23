@@ -1,6 +1,11 @@
-/*.social {
+.social {
+  margin-bottom: 44px;
 
-}*/
+  @media (min-width: $tablet-width) {
+    margin-top: 2px;
+    margin-bottom: 0;
+  }
+}
 
 .social__list {
   @include reset-list;

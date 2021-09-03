@@ -1,8 +1,4 @@
-/*.form {
-
-}*/
-
-.form__wrapper {
+.form {
   padding: 17px 0 55px;
 
   @media (min-width: $tablet-width) {
@@ -34,11 +30,6 @@
     padding: 0 225px;
   }
 }
-
-/* TODO: delete */
-/*.form__main-content {
-
-}*/
 
 .form__content-wrapper {
   max-width: 1150px;
