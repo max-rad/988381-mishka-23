@@ -117,7 +117,7 @@
 .content__link {
   position: relative;
   display: block;
-  min-height: 103px;
+  height: 100%;
   padding: 24px 160px 31px 30px;
   color: $basic-white;
 
@@ -127,15 +127,13 @@
 
   &--icon-interior:hover {
     bottom: 5px;
-    min-height: 124px;
-    margin-bottom: -5px;
+    height: calc(100% + 5px);
     background-color: $special-moderate-downy;
   }
 
   &--icon-interior:focus {
     bottom: 5px;
-    min-height: 124px;
-    margin-bottom: -5px;
+    height: calc(100% + 5px);
     background-color: $special-moderate-downy;
   }
 
@@ -167,15 +165,13 @@
 
   &--icon-toy:hover {
     bottom: 5px;
-    min-height: 124px;
-    margin-bottom: -5px;
+    height: calc(100% + 5px);
     background-color: $special-moderate-puerto-rico;
   }
 
   &--icon-toy:focus {
     bottom: 5px;
-    min-height: 124px;
-    margin-bottom: -5px;
+    height: calc(100% + 5px);
     background-color: $special-moderate-puerto-rico;
   }
 

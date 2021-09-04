@@ -35,7 +35,6 @@
 }
 
 .promo__wrapper {
-  position: relative;
   max-width: 1150px;
   margin: 0 auto;
   padding: 0 30px 42px;
@@ -45,7 +44,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 50px 96px;
+    padding: 61px 50px 96px;
   }
 }
 
@@ -57,10 +56,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
-    top: 60px;
-    left: 82px;
-    margin-bottom: 0;
+    margin-bottom: 35px;
   }
 }
 
@@ -105,6 +101,7 @@
   @media (min-width: $desktop-width) {
     margin-right: 43px;
     margin-bottom: 7px;
+    margin-left: 32px;
   }
 }
 
@@ -123,38 +120,38 @@
   }
 
   @media (min-width: $desktop-width) {
-    align-items: start;
-    column-gap: 58px;
+    position: relative;
+    display: block;
     padding-left: 175px;
+    padding-right: 583px;
   }
 }
 
 .promo__description {
   @include reset-text;
-  grid-area: promo-description;
   margin-bottom: 28px;
   font-size: 15px;
   line-height: 24px;
   color: $basic-gray;
 
   @media (min-width: $tablet-width) {
+    grid-area: promo-description;
     margin-bottom: 47px;
     font-size: 17px;
     line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 153px;
     margin-bottom: 60px;
   }
 }
 
 .promo__list {
   @include reset-list;
-  grid-area: promo-list;
   margin-bottom: 41px;
 
   @media (min-width: $tablet-width) {
+    grid-area: promo-list;
     margin-bottom: 71px;
   }
 
@@ -195,17 +192,21 @@
 }
 
 .promo__image-wrapper {
-  grid-area: promo-image;
   height: 100%;
   margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {
+    grid-area: promo-image;
     display: flex;
     align-items: flex-end;
     margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
+    z-index: -1;
+    position: absolute;
+    right: 0;
+    bottom: 0;
     width: 525px;
     height: 636px;
   }
@@ -227,7 +228,6 @@
 
 .promo__price {
   @include reset-text;
-  grid-area: promo-price;
   margin-bottom: 24px;
   font-weight: 700;
   font-size: 17px;
@@ -236,6 +236,7 @@
   color: $basic-gray;
 
   @media (min-width: $tablet-width) {
+    grid-area: promo-price;
     margin-bottom: 33px;
     font-size: 20px;
     line-height: 24px;
@@ -243,10 +244,10 @@
 }
 
 .promo__button {
-  grid-area: promo-button;
   padding: 14px 77px;
 
   @media (min-width: $tablet-width) {
+    grid-area: promo-button;
     font-size: 17px;
   }
 }
