@@ -1,8 +1,6 @@
 const mainPage = document.querySelector(".page__body");
 const modalLink = document.querySelector(".promo__button");
 const modalPopup = document.querySelector(".modal");
-const modalForm = modalPopup.querySelector(".modal__form");
-
 
 modalLink.addEventListener("click", function (evt) {
   evt.preventDefault();
