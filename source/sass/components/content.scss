@@ -132,6 +132,13 @@
     background-color: $special-moderate-downy;
   }
 
+  &--icon-interior:focus {
+    bottom: 5px;
+    min-height: 124px;
+    margin-bottom: -5px;
+    background-color: $special-moderate-downy;
+  }
+
   &--icon-interior::after {
     position: absolute;
     content: "";
@@ -159,6 +166,13 @@
   }
 
   &--icon-toy:hover {
+    bottom: 5px;
+    min-height: 124px;
+    margin-bottom: -5px;
+    background-color: $special-moderate-puerto-rico;
+  }
+
+  &--icon-toy:focus {
     bottom: 5px;
     min-height: 124px;
     margin-bottom: -5px;
